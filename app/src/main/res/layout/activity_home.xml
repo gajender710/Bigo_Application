@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/log_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <TextView
+        android:id="@+id/user_Space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/upload_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic" />
+
+    <Button
+        android:id="@+id/Save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_Btn" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_pic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:roundAsCircle="true"
+        app:roundWithOverlayColor="@color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        fresco:placeholderImage="@drawable/img_1" />
+
+    <!--<ImageView
+       android:id="@+id/profile_pic"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintBottom_toBottomOf="@+id/Home_cardview"
+       app:layout_constraintEnd_toEndOf="@+id/Home_cardview"
+       app:layout_constraintStart_toStartOf="@+id/Home_cardview"
+       app:layout_constraintTop_toTopOf="@+id/Home_cardview"
+       tools:srcCompat="@tools:sample/avatars" />-->
+
+
+    <!--
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/log_out_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+           -->
+</androidx.constraintlayout.widget.ConstraintLayout>

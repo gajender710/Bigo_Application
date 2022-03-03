@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI_Activity">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ui_Profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="10dp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="1000"
+        fresco:failureImage="@drawable/insta_img"
+        fresco:layout_constraintEnd_toEndOf="parent"
+        fresco:layout_constraintStart_toStartOf="parent"
+        fresco:layout_constraintTop_toTopOf="parent"
+        fresco:placeholderImage="@drawable/img"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:retryImage="@drawable/insta_img"
+        fresco:roundedCornerRadius="1000dp"
+        fresco:roundWithOverlayColor="@color/white"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderWidth="1dp"
+        fresco:roundingBorderColor="@color/primary"
+
+        >
+
+        <!--
+        fresco:placeholderImage="@color/wait_color"
+
+        fresco:failureImage="@drawable/error"
+        fresco:failureImageScaleType="centerInside"
+        fresco:retryImage="@drawable/retrying"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:progressBarImage="@drawable/progress_bar"
+        fresco:progressBarAutoRotateInterval="1000"
+        fresco:backgrouarImageScaleType="centerInside"
+
+        fresco:overlayImage="@drawable/watermark"
+        fresco:pressedStateOverlayImage="@color/red"
+
+
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="false"
+        fresco:roundBottomLeft="false"
+        fresco:roundBottomRight="true"
+        fresco:roundTopStart="false"
+        fresco:roundTopEnd="false"
+        fresco:roundBottomStart="false"
+        fresco:roundBottomEnd="false"
+        fresco:roundWithOverlayColor="@color/corner_color"
+        -->
+
+
+    </com.facebook.drawee.view.SimpleDraweeView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
